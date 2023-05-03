@@ -1,0 +1,77 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API de Exemplo",
+        "description": "Uma API de exemplo para demonstração do Swagger.",
+        "version": "1.0.0"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api/v1",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/user": {
+            "get": {
+                "summary": "Retorna um usuario conforme o username.",
+                "description": "Retorna um usuario conforme o username cadastrados no sistema.",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "username",
+                        "description": "username",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Retorna um usuario conforme o username cadastrados no sistema."
+                    }
+                }
+            }
+        },
+        "/users": {
+            "get": {
+                "summary": "Retorna uma lista de usuários.",
+                "description": "Retorna uma lista de usuários cadastrados no sistema.",
+                "responses": {
+                    "200": {
+                        "description": "Lista de usuários retornada com sucesso."
+                    }
+                }
+            }
+        },
+        "/getUserAndGroup": {
+            "get": {
+                "summary": "Retorna um usuario e informações conforme o username.",
+                "description": "Retorna um usuario e informações conforme o username cadastrados no sistema.",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "username",
+                        "description": "username",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Retorna um usuario e informações conforme o username cadastrados no sistema."
+                    }
+                }
+            }
+        },
+        "/getAllUsersAndGroup": {
+            "get": {
+                "summary": "Retorna todos usuarios e informações.",
+                "description": "Retorna todos usuarios e informações cadastrados no sistema.",
+                "responses": {
+                    "200": {
+                        "description": "Retorna todos usuarios e informações cadastrados no sistema."
+                    }
+                }
+            }
+        }
+    }
+}
