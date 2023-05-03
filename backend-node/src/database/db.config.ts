@@ -1,7 +1,7 @@
 import { Dialect, Sequelize } from 'sequelize'
 
 let sequelizeConnection: any;
-const dbName = process.env.DB_NAME as string || 'portalsc';
+const dbName = process.env.DB_NAME as string || 'crud';
 const dbUser = process.env.DB_USER as string || 'root';
 const dbHost = process.env.DB_HOST || 'localhost';
 const dbDriver = process.env.DB_DRIVER as Dialect || 'mysql';
