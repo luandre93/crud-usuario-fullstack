@@ -84,7 +84,7 @@ export default {
   },
   data() {
     return {
-      result: "Não existe usuários cadastrados, tente adicionar no botão mais.",
+      result: "Não existe usuários cadastrados, tente adicionar no botão.",
       search: "",
       show: { add: false, upd: false },
     }
