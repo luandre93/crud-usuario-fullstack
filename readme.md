@@ -4,8 +4,18 @@
 
 ------------
 
-[TOC]
-
+* [Demonstração](#demonstração)
+* [Modelo Relacional no Banco de Dados](#modelo-relacional-no-banco-de-dados)
+* [Iniciando Projeto](#iniciando-projeto)
+    -[Instalação Dependências](#instalando-dependências)
+        -[Backend-Node](#backend-node)
+        -[Frontend-Vue](#frontend-vue)
+    -[Rodando Servidor Local](#rodando-servidor-local)
+        -[Backend-Node](#backend-node-1)
+        -[Frontend-Vue](#frontend-vue-1)
+* [Configuração do Banco na aplicação](#configuração-do-banco-na-aplicação)
+    -[backend-node/src/database/db.config.ts](#backend-nodesrcdatabasedbconfigts)
+* [Arquivo SQL Importando pelo DBeaver](#arquivo-sql-importando-pelo-dbeaver)
 ------------
 
 ## Demonstração
@@ -42,7 +52,7 @@ Obs: Inicialização na porta 8080
 
 Para alteração de parametros do banco de dados altera as linhas no arquivo abaixo:
 
-#### -  backend-node/src/database/db.config.ts
+#### - backend-node/src/database/db.config.ts
 ```
 const dbName = process.env.DB_NAME as string || 'crud';  		// Nome do Banco de Dados.
 const dbUser = process.env.DB_USER as string || 'root';     	// Nome do Usuário.
