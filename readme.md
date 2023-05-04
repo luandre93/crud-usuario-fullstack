@@ -27,22 +27,22 @@
 ## Iniciando Projeto
 
 ####  Instalando Dependências
-##### - Backend-Node
+##### * Backend-Node
 * cd /backend-node/
 * npm install
 
-##### - Frontend-Vue
+##### * Frontend-Vue
 * cd /frontend-vue/
 * npm install
 
 #### Rodando Servidor Local
-##### - Backend-Node
+##### * Backend-Node
 * cd /backend-node/
 * npm start
 
 Obs: Inicialização na porta 3000
 
-##### - Frontend-Vue
+##### * Frontend-Vue
 * cd /frontend-vue/
 * npm run dev
 
@@ -52,7 +52,7 @@ Obs: Inicialização na porta 8080
 
 Para alteração de parametros do banco de dados altera as linhas no arquivo abaixo:
 
-#### - backend-node/src/database/db.config.ts
+#### * backend-node/src/database/db.config.ts
 ```
 const dbName = process.env.DB_NAME as string || 'crud';  		// Nome do Banco de Dados.
 const dbUser = process.env.DB_USER as string || 'root';     	// Nome do Usuário.
