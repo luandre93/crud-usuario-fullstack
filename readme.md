@@ -45,10 +45,10 @@ Para alteração de parametros do banco de dados altera as linhas no arquivo aba
 #### -  backend-node/src/database/db.config.ts
 ```
 const dbName = process.env.DB_NAME as string || 'crud';  		// Nome do Banco de Dados.
-const dbUser = process.env.DB_USER as string || 'root';     		// Nome do Usuário.
-const dbHost = process.env.DB_HOST || 'localhost';         			 // Host aonde se localiza o banco geralmente localhost
-const dbDriver = process.env.DB_DRIVER as Dialect || 'mysql';  // Qual SGBD você quer conectar.
-const dbPassword = process.env.DB_PASS || "" ; 						  // Senha do do usuario.
+const dbUser = process.env.DB_USER as string || 'root';     	// Nome do Usuário.
+const dbHost = process.env.DB_HOST || 'localhost';         		// Host aonde se localiza o banco geralmente localhost
+const dbDriver = process.env.DB_DRIVER as Dialect || 'mysql';   // Qual SGBD você quer conectar.
+const dbPassword = process.env.DB_PASS || "" ; 				    // Senha do do usuario.
 ```
 ## Arquivo SQL Importando pelo DBeaver
 
