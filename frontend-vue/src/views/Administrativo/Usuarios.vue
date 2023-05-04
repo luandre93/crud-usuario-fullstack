@@ -51,7 +51,7 @@
                   </v-btn>
                 </td>
                 <td class="text-center px-0 pr-2">
-                  <v-btn icon color="red" variant="solo" @click="delUser({ id: item.User.id })">
+                  <v-btn icon color="red" variant="solo" @click="deleteUser({ id: item.User.id })">
                     <v-icon icon="mdi-account-cancel"></v-icon>
                   </v-btn>
                 </td>
@@ -101,7 +101,8 @@ export default {
     formatDate(string) {
       return string.split(' ')[0].split('-').reverse().join('/')
     },
-    async delUser({ id }) {
+    async deleteUser({ id }) {
+      console.log(id)
       await this.delUser(id)
       await this.getUsers();
     },
