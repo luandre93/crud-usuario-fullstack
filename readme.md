@@ -65,4 +65,4 @@ const dbPassword = process.env.DB_PASS || "" ; 				    // Senha do do usuario.
 Na pasta ***database-mysql*** se encontra um arquivo chamado ***mysql-crud.sql***, aonde iremos importar no DBeaver.
 - Abra o DBeaver e crie um banco de dados chamado crud.
 - Com botão direito em crud va até **"Tools -> Restore Database"**, logo em seguida se abrirá uma janela pedido o caminho do arquivo que iremos importar.
-- Logo importado toda a estrutura está construida no Banco de Dados.
+- Logo importado toda a estrutura estará construida no Banco de Dados.
